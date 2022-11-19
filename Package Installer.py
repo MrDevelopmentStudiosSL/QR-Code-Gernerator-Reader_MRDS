@@ -1,5 +1,4 @@
 import os
-from tkinter import messagebox
 
 def trynow():
     try:
@@ -9,17 +8,19 @@ def trynow():
         os.system('pip install tk')
         os.system('pip install tkinter')
         print('\n\nAll Packages are succesfully installed')
+        input('Press Enter to Exit [ENTER]')
 
     except:
-        messagebox.showerror('Package Installer',"Sorry we failed to install packages.")
+        print('Somthing Went Wrong')
 try:
     os.system('pip install qrcode')
     os.system('pip install pyzbar')
     os.system('pip install pilllow')
     print('\n\nAll Packages are succesfully installed')
+    input('Press Enter to Exit [ENTER]')
 
 except:
-    messagebox.showerror('Package Installer','Check your internet connection and storage capacity and try again')
+    print('Somthing Went Wrong')
     input('Press Enter to try again')
     os.system('cls')
     trynow()
